@@ -1,0 +1,115 @@
+@font-face {
+    font-family: "pixelNumbers";
+    src: url('pixelNumbers.woff2') format('woff2');
+}
+
+* {
+    image-rendering: pixelated;
+
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-size: 10%;
+    background-repeat: repeat;
+    background-image: url(textures/background.gif);
+}
+
+.container {
+    position: absolute;
+
+    width: 141.875vh;
+    height: 90vh;
+}
+
+.board {
+    position: absolute;
+
+    width: 105vh;
+    height: 90vh;
+
+    background-image: url(textures/board.png);
+}
+
+table {
+    z-index: 10;
+
+    width: 105vh;
+    height: 90vh;
+
+    border-collapse: collapse;
+}
+
+td:hover {
+    background-image: url(textures/selection.png);
+}
+
+.stats {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    font-family: "pixelNumbers";
+    font-size: 3.75vh;
+    text-align: center;
+    color: #012f54;
+
+    width: 21.875vh;
+    height: 35vh;
+
+    background-image: url(textures/stats.png);
+}
+
+.wins0 {
+    position: absolute;
+    top: 12.5vh;
+    left: 12.5vh;
+
+    width: 8.75vh;
+    height: 3.75vh;
+}
+
+.wins1 {
+    position: absolute;
+    top: 25vh;
+    left: 12.5vh;
+
+    width: 8.75vh;
+    height: 3.75vh;
+}
+
+.turn {
+    position: absolute;
+    top: 38.75vh;
+    right: 0;
+
+    width: 21.875vh;
+    height: 35vh;
+
+    background-image: url(textures/turn0.png);
+}
+
+.reset {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    width: 21.875vh;
+    height: 10vh;
+
+    background-image: url(textures/reset.png);
+}
+
+.reset:hover {
+    background-image: url(textures/resetHover.png);
+}
